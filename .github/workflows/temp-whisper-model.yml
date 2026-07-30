@@ -1,9 +1,10 @@
 name: Temporary Whisper Model Package
 
 on:
-  push:
+  pull_request:
     branches:
-      - temp-whisper-model-20260729
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
